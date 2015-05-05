@@ -43,9 +43,13 @@ A simple Python IRC bot
 
 * **Test parameters:**
   * `!about` in chat to test the about function.
-	* Send a message with content `ping` or `PING` to see the bot reply `pong` or `PONG` accordingly.
+
+  * Send a message with content `ping` or `PING` to see the bot reply `pong` or `PONG` accordingly.
+  
 	* Change the Boolean variable `debug` in `dircbot.py` to turn on/off debug mode, which prints out buffer content for debugging purpose.
+
 	* Change the variable `min_interval` and `max_interval` in `dircbot.py` to set the interval time between quotes.
+
 	* Change the variable `filename` to `utf8_test.txt` (bundled globalization test database) to test the bot's Unicode support.
 
 ## Limitations
