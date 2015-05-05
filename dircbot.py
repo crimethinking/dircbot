@@ -64,7 +64,9 @@ def main():
             print(buffer_data)
         else:
             pass
-
+        
+        # rudimentary chat parsing, should be reworked sometime in the future 
+        # as this has a lot of drawbacks
         # keep-alive ping, greeting and about commands
         # respond to server's PING command to keep connection alive
         if buffer_data.find(b"PING") != -1:
