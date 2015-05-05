@@ -22,7 +22,7 @@ A simple Python IRC bot
 * Python 3.4.x
 
 ## Getting Started
-* Set up necessary parameters such as nickname, chat server and channel in the configuration part of dircbot.py. dircbot's source code, and particularly the configuration section, is carefully commented to assist user. (screenshot)
+* Set up necessary parameters such as nickname, chat server and channel in the configuration part of dircbot.py. dircbot's source code, and particularly the configuration section, is carefully commented to assist user.
 
   ![](http://i.imgur.com/EiXsQPA.png)
 
