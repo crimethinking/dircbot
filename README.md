@@ -2,19 +2,30 @@
 A simple Python IRC bot
 
 ## Features
-* Greet when an user joins chat.
+* Greet when an user joins chat
+  
+  ![](http://i.imgur.com/hdC1X9g.png)
 
-![](http://i.imgur.com/hdC1X9g.png)
+* Reply "pong" to "ping"
 
-* Reply "pong" to "ping". (screenshot)
-* Randomly send out quotes from a quote database. (screenshot)
-	* Support Unicode for ultimate international quoting experience. (screenshot)
+  ![](http://i.imgur.com/yiAQTVb.png)
+
+* Randomly send out quotes from a quote database
+
+  ![](http://i.imgur.com/Sx5EgXc.png)
+
+	* Support Unicode for ultimate international quoting experience
+
+    ![](http://i.imgur.com/Q7H59ez.png)
 
 ## Requirement
 * Python 3.4.x
 
 ## Getting Started
 * Set up necessary parameters such as nickname, chat server and channel in the configuration part of dircbot.py. dircbot's source code, and particularly the configuration section, is carefully commented to assist user. (screenshot)
+
+  ![](http://i.imgur.com/EiXsQPA.png)
+
 * Run straight from Python CLI REPL: `python dircbot.py` or from inside IDLE.
 
 ## Design Architecture
@@ -41,7 +52,6 @@ A simple Python IRC bot
 * Naive chat parsing that can cause glitches with some functions (see known issues).
 * Does not support secure connection to IRC server.
 * Does not support Simple Authentication and Security Layer (SASL) for authentication with server.
-
 
 ## Revision to original design
 * Refactorized subroutine code into modules.
