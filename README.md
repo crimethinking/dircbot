@@ -34,7 +34,7 @@ A simple Python IRC bot
 	* Change the variable `min_interval` and `max_interval` in `dircbot.py` to set the interval time between quotes.
 	+ Change the variable `filename` to `utf8_test.txt` (bundled globalization test database) to test the bot's Unicode support.
 
-## Limitations:
+## Limitations
 * Naive chat parsing that can cause glitches with some functions (see known issues).
 * Does not support secure connection to IRC server.
 * Does not support Simple Authentication and Security Layer (SASL) for authentication with server.
@@ -44,7 +44,7 @@ A simple Python IRC bot
 * Refactorized subroutine code into modules.
 * Added multithreading.
 
-## Known issues:
+## Known issues
 * Ctrl+C does not work on Windows command prompt, but fine on UNIX systems. This is a Windows issue as it is not compliant with UNIX interrupt signals, which Python uses.
 * Interrupts are not gracefully handled due to the use of multithreading.
 * Naive chat parsing causing bot to send a welcome message when it joins the channel.
