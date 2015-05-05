@@ -15,6 +15,7 @@ def quote(socket, channel, filename):
         
         # read the quotes into an array
         quote_list = quote_file.readlines()
+        quote_file.close()
 
         # seed the rng with the system's current time
         random.seed()
