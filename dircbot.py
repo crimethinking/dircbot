@@ -1,5 +1,8 @@
 #!/usr/bin/env python3.4
 
+# dircbot 0.1 - a Python IRC bot
+# by Duy Nguyen
+
 # import system modules
 import random
 import socket
@@ -13,15 +16,23 @@ import modules.misc as misc
 import modules.pingpong as pingpong
 
 # configuration
-# bot's nickname, username and realname
+# all string configuration must be set with a "b" prefix (typecasting variables
+# as bytes in order for Python to communicate with server through sockets)
+
+# bot's nickname
 nickname = b"dircbot"
 
 # server, port and socket buffer size
+#
+# irc server address and port
+# 6667 is the default insecure irc port of all popular irc servers
+server = b"irc.freenode.net"
+port = 6667
+
+# buffer size
 # from Python socket documentation: "the value of bufsize should be a 
 # relatively small power of 2, for example, 4096"
 # so you can leave buffer_size as it is
-server = b"irc.freenode.net"
-port = 6667
 buffer_size = 4096
 
 # channel to join
@@ -30,9 +41,9 @@ channel = b"##py_irc_test4235"
 # random quoting configuration
 # quote database
 filename = "quote.txt"
-# minimum and maximum interval between sending each quote
-min_interval = 120
-max_interval = 600
+# minimum and maximum interval between sending each quote (in seconds)
+min_interval = 20
+max_interval = 40
 
 # debug mode
 debug = True
@@ -49,7 +60,7 @@ def main():
     # send bot's nickname
     irc.send(b"NICK " + nickname + b"\r\n")    
     # send bot's identification using the USER command
-    # compliant with RFC 2812
+    # RFC 2812 compliant
     irc.send(b"USER dirc 0 * :dircbot\r\n")
     # join the predefined channel
     irc.send(b"JOIN " + channel + b"\r\n")
