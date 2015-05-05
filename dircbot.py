@@ -93,19 +93,19 @@ def quoting(socket, channel, filename):
 
 # showtime
 def run():
-	try:
-	    # 2 threads running concurrently to prevent I/O or 
-	    # timer blocking misc functions
-	    # main thread that parses IRC stream for chat commands
-	    threading.Thread(target=main).start()
-	    # another thread runs concurrently to provide quotations
-	    threading.Thread(target=quoting, args=(irc, channel, filename)).start()
-	# handling SIGINT or EOF gracefully
-	# quit the channel, close socket and exit the program
-	except KeyboardInterrupt or EOFError:
-	    misc.quit(irc, channel)
-	    irc.close()
-	    print("Bot terminated.")
-	    sys.exit()
+    try:
+        # 2 threads running concurrently to prevent I/O or 
+        # timer blocking misc functions
+        # main thread that parses IRC stream for chat commands
+        threading.Thread(target=main).start()
+        # another thread runs concurrently to provide quotations
+        threading.Thread(target=quoting, args=(irc, channel, filename)).start()
+    # handling SIGINT or EOF gracefully
+    # quit the channel, close socket and exit the program
+    except KeyboardInterrupt or EOFError:
+        misc.quit(irc, channel)
+        irc.close()
+        print("Bot terminated.")
+        sys.exit()
 
 run()
