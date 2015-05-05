@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.4
+
 # import system modules
 import random
 import socket
