@@ -9,14 +9,14 @@ def ping(socket, stream):
 # about
 # reply with bot's version information
 def about(socket, channel):
-	socket.send(b"PRIVMSG " + channel + b" :dircbot 0.1 by Duy Nguyen\r\n")
+    socket.send(b"PRIVMSG " + channel + b" :dircbot 0.1 by Duy Nguyen\r\n")
 
 # greet
 # when an user joins the channel, send out a greeting
 def greet(socket, channel):
-	socket.send(b"PRIVMSG " + channel + b" :Welcome to " + channel + b" channel.\r\n")
+    socket.send(b"PRIVMSG " + channel + b" :Welcome to " + channel + b" channel.\r\n")
 
 # quit
 # quit the channel
 def quit(socket, channel):
-	socket.send(b"QUIT\r\n")
+    socket.send(b"QUIT\r\n")
