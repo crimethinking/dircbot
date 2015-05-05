@@ -2,7 +2,10 @@
 A simple Python IRC bot
 
 ## Features
-* Greet when an user joins chat. (screenshot)
+* Greet when an user joins chat.
+
+![](http://i.imgur.com/hdC1X9g.png)
+
 * Reply "pong" to "ping". (screenshot)
 * Randomly send out quotes from a quote database. (screenshot)
 	* Support Unicode for ultimate international quoting experience. (screenshot)
