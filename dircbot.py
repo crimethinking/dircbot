@@ -52,7 +52,7 @@ def main():
     # join the predefined channel
     irc.send(b"JOIN " + channel + b"\r\n")
 
-    print("dircbot 0.1 running. Press Ctrl+C Ctrl+D to stop.")
+    print("dircbot 0.1 running. Press Ctrl+C to stop.")
 
     # loop for as long as the connection is alive
     while True:
