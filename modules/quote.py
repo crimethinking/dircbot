@@ -6,11 +6,6 @@ import random
 
 def quote(socket, channel, filename):
     try:
-        # set the file name of the quote database
-        # the database is in plain text
-        # each quote should be on a separate line
-        #filename = "quote.txt"
-
         # resolve path for quote database
         basepath = os.path.dirname(__file__)
         filepath = os.path.abspath(os.path.join(basepath, filename))
