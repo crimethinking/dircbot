@@ -1,5 +1,5 @@
 # dircbot
-A Python IRC bot by Duy Nguyen
+A simple Python IRC bot
 
 ## Features
 * Greet when an user joins chat. (screenshot)
