@@ -100,8 +100,13 @@ def main():
 
 def quoting(socket, channel, filename):
     while True:
+        # randomize the interval between quotations
         interval = random.randint(min_interval, max_interval)
+        # sleep for that amount of time
         time.sleep(interval)
+        # send a random quote from <filename>
+        # text file MUST be in utf-8 encoding, or it will mess with
+        # the display of international characters in chat
         quote.quote(socket, channel, filename)
 
 # showtime
